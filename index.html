@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Proyecto</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+<?php
+session_start();
+error_reporting(0);
+$varsesion = $_SESSION['u_usuario'];
+if ($varsesion == null || $varsesion ='') 
+{
+echo 'usted no tiene autorizacion';
+die();}
+?>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.php">Cerrar Sesion</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        
+
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="container">
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdown1" data-toggle="dropdown">
+        Control de pagos
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="work/index_asistencia.php">Asistencia</a>
+        <a class="dropdown-item" href="work/index_pago_salario.php">Pago salario</a>
+      </div>
+    </div>  
+  </div>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+         <li class="nav-item">
+            <a class="nav-link" href="work/index_obra.php">Obra</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="work/index_material.php">Material</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="work/index_almacen.php">Almacen</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="work/index_material_usado.php">Material Usado</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="work/index_jefe_encargado.php">Jefe Grupo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="work/index_registro_trabajador.php">Registro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="work/index_asistencia.php">Asistencia</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="work/index_pago_salario.php">pago salario</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="work/index_rango.php">Rango Trabajador</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="work/index_tipo_trabajo.php">Tipo de Trabajo</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="work/index_salario.php">Monto de Salario</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="work/index_avance_semanal.php">Avance Semana</a>
+          </li>
+          
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" width="100%" style="background-image: url('img/img.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>CONSTRUCTORA ESPINOZA</h1>
+            <span class="subheading">Tu mejor opcion para construcciones de calidad</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+
+</body>
+
+</html>
